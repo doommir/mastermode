@@ -1,0 +1,16 @@
+# Node / Client
+client/node_modules
+client/build
+client/.env
+client/.env*.local
+.DS_Store
+
+# Python / API (add specific rules as needed)
+api/__pycache__/
+api/*.pyc
+api/.env
+.venv/
+
+# OS generated files
+*.swp
+*~ 
