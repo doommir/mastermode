@@ -1,8 +1,8 @@
 {
   "framework": null,
-  "buildCommand": null,
+  "buildCommand": "npm install && npm run build",
   "devCommand": null,
-  "outputDirectory": "public",
+  "outputDirectory": "build",
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api/generate-flashcards.js" }
   ]
