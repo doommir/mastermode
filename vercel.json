@@ -1,6 +1,9 @@
 {
+  "framework": null,
+  "buildCommand": null,
+  "devCommand": null,
+  "outputDirectory": "public",
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/generate-flashcards.js" },
-    { "source": "/(.*)", "destination": "/client/public/index.html" }
+    { "source": "/api/(.*)", "destination": "/api/generate-flashcards.js" }
   ]
 }
