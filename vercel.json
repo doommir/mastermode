@@ -1,12 +1,6 @@
 {
-  "version": 2,
-  "builds": [
-    { "src": "api/generate-flashcards.js", "use": "@vercel/node" },
-    { "src": "client/package.json", "use": "@vercel/static-build", "config": { "distDir": "build" } }
-  ],
-  "routes": [
-    { "src": "/api/(.*)", "dest": "/api/generate-flashcards.js" },
-    { "src": "/(.*\\.(js|json|css|ico|png|jpg|svg))", "dest": "/client/build/$1" },
-    { "src": "/(.*)", "dest": "/client/build/index.html" }
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/generate-flashcards.js" },
+    { "source": "/(.*)", "destination": "/client/public/index.html" }
   ]
 }
